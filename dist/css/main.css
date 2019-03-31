@@ -277,6 +277,9 @@ main {
   .about-info {
     grid-template-areas: "bioimage" "bio" "skill1" "skill2" "skill3";
     grid-template-columns: 1fr; }
+    .about-info ul {
+      list-style: none;
+      padding-right: 2.5rem; }
   .projects {
     grid-template-columns: repeat(2, 1fr); } }
 
