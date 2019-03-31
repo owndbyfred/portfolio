@@ -55,7 +55,7 @@
     .menu-branding .portrait {
       width: 250px;
       height: 250px;
-      background: url(../img/sm_portrait.png);
+      background: url(../img/portrait.png);
       border-radius: 50%;
       border: solid 3px #a01aee; }
   .menu .nav-item {
@@ -90,6 +90,40 @@
 .nav-item:nth-child(4) {
   transition-delay: 0.4s; }
 
+@media screen and (max-width: 768px) {
+  main {
+    align-items: center;
+    text-align: center;
+    line-height: 1;
+    margin-bottom: 1rem; }
+  ul.menu-nav,
+  div.menu-branding {
+    float: none;
+    width: 100%;
+    min-height: 0; }
+    ul.menu-nav.show,
+    div.menu-branding.show {
+      transform: translate3d(0, 0, 0); }
+  .menu-nav {
+    height: 75vh;
+    transform: translate3d(-100%, 0, 0);
+    font-size: 24px; }
+  .menu-branding {
+    height: 25vh;
+    transform: translate3d(100%, 0, 0); }
+    .menu-branding .portrait {
+      background: url("../img/portrait_small.png");
+      width: 150px;
+      height: 150px; } }
+
+@media screen and (max-width: 500px) {
+  main#home h1 {
+    margin-top: 10vh; }
+    main#home h1 .long-text {
+      display: none; }
+    main#home h1 .short-text {
+      display: inline-block; } }
+
 * {
   box-sizing: border-box; }
 
@@ -123,6 +157,10 @@ h3 {
   h2.lg-heading,
   h3.lg-heading {
     font-size: 6rem; }
+  h1 .short-text,
+  h2 .short-text,
+  h3 .short-text {
+    display: none; }
   h1.sm-heading,
   h2.sm-heading,
   h3.sm-heading {
