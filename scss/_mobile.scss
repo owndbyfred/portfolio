@@ -64,4 +64,20 @@
       display: inline-block;
     }
   }
+
+  main#about {
+    & h1,
+    h2,
+    h3 {
+      &.lg-heading {
+        font-size: 4rem;
+      }
+      &.sm-heading {
+        font-size: 1.2rem;
+      }
+    }
+    .bio-image {
+      width: 150px;
+    }
+  }
 }

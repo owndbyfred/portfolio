@@ -227,4 +227,14 @@ main {
     main#home h1 .long-text {
       display: none; }
     main#home h1 .short-text {
-      display: inline-block; } }
+      display: inline-block; }
+  main#about h1.lg-heading,
+  main#about h2.lg-heading,
+  main#about h3.lg-heading {
+    font-size: 4rem; }
+  main#about h1.sm-heading,
+  main#about h2.sm-heading,
+  main#about h3.sm-heading {
+    font-size: 1.2rem; }
+  main#about .bio-image {
+    width: 150px; } }
