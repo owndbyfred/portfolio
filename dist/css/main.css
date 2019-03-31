@@ -197,6 +197,25 @@ main {
       border-color: #a01aee;
       transition: all 0.5s ease-out; }
 
+.boxes {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-top: 1rem; }
+  .boxes div {
+    font-size: 2rem;
+    border: solid 3px #fff;
+    padding: 1.5rem 2.5rem;
+    margin-bottom: 3rem;
+    transition: all 0.5s ease-out; }
+    .boxes div:hover {
+      padding: 0.5rem 1.5rem;
+      background: #a01aee;
+      color: #000; }
+      .boxes div:hover span {
+        color: #000; }
+
 .btn, .btn-dark, .btn-light {
   display: block;
   padding: 0.5rem 1rem;
@@ -273,7 +292,10 @@ main {
   main#about h3.lg-heading,
   main#work h1.lg-heading,
   main#work h2.lg-heading,
-  main#work h3.lg-heading {
+  main#work h3.lg-heading,
+  main#contact h1.lg-heading,
+  main#contact h2.lg-heading,
+  main#contact h3.lg-heading {
     font-size: 4rem;
     margin-top: 1rem; }
   main#about h1.sm-heading,
@@ -281,11 +303,15 @@ main {
   main#about h3.sm-heading,
   main#work h1.sm-heading,
   main#work h2.sm-heading,
-  main#work h3.sm-heading {
+  main#work h3.sm-heading,
+  main#contact h1.sm-heading,
+  main#contact h2.sm-heading,
+  main#contact h3.sm-heading {
     font-size: 1.2rem;
     margin-top: 1rem; }
   main#about .bio-image,
-  main#work .bio-image {
+  main#work .bio-image,
+  main#contact .bio-image {
     width: 150px; }
   .projects {
     grid-template-columns: repeat(1, 1fr); } }
