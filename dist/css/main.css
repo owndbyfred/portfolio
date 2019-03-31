@@ -185,12 +185,50 @@ main {
     padding: 0.5rem;
     border-bottom: solid 5px #a01aee; }
 
+.projects {
+  display: grid;
+  grid-gap: 0.7rem;
+  grid-template-columns: repeat(3, 1fr); }
+  .projects img {
+    width: 100%;
+    border: solid 3px #fff; }
+    .projects img:hover {
+      opacity: 0.5;
+      border-color: #a01aee;
+      transition: all 0.5s ease-out; }
+
+.btn, .btn-dark, .btn-light {
+  display: block;
+  padding: 0.5rem 1rem;
+  border: 0;
+  margin-bottom: 0.3rem; }
+  .btn:hover, .btn-dark:hover, .btn-light:hover {
+    background: #a01aee;
+    color: #000;
+    transition: all 0.5s ease-out; }
+
+.btn-dark {
+  background: black;
+  color: #fff; }
+
+.btn-light {
+  background: #a089c8;
+  color: #000; }
+
 #main-footer {
   text-align: center;
   padding: 1rem;
   background: #0e0a15;
   color: #fff;
   height: 60px; }
+
+@media screen and (min-width: 1171px) {
+  .projects {
+    grid-template-columns: repeat(4, 1fr); } }
+
+@media screen and (mind-width: 769px) and (max-width: 1170px) {
+  .projects {
+    grid-template-columns: repeat(3, 1fr); } }
 
 @media screen and (max-width: 768px) {
   main {
@@ -219,7 +257,9 @@ main {
       height: 150px; }
   .about-info {
     grid-template-areas: "bioimage" "bio" "skill1" "skill2" "skill3";
-    grid-template-columns: 1fr; } }
+    grid-template-columns: 1fr; }
+  .projects {
+    grid-template-columns: repeat(2, 1fr); } }
 
 @media screen and (max-width: 500px) {
   main#home h1 {
@@ -230,11 +270,22 @@ main {
       display: inline-block; }
   main#about h1.lg-heading,
   main#about h2.lg-heading,
-  main#about h3.lg-heading {
-    font-size: 4rem; }
+  main#about h3.lg-heading,
+  main#work h1.lg-heading,
+  main#work h2.lg-heading,
+  main#work h3.lg-heading {
+    font-size: 4rem;
+    margin-top: 1rem; }
   main#about h1.sm-heading,
   main#about h2.sm-heading,
-  main#about h3.sm-heading {
-    font-size: 1.2rem; }
-  main#about .bio-image {
-    width: 150px; } }
+  main#about h3.sm-heading,
+  main#work h1.sm-heading,
+  main#work h2.sm-heading,
+  main#work h3.sm-heading {
+    font-size: 1.2rem;
+    margin-top: 1rem; }
+  main#about .bio-image,
+  main#work .bio-image {
+    width: 150px; }
+  .projects {
+    grid-template-columns: repeat(1, 1fr); } }

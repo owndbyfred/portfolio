@@ -1,8 +1,14 @@
 //wide screens
 @include mediaXl {
+  .projects {
+    grid-template-columns: repeat(4, 1fr);
+  }
 }
 //Desktops and laptops
 @include mediaLg {
+  .projects {
+    grid-template-columns: repeat(3, 1fr);
+  }
 }
 //tablets
 @include mediaMd {
@@ -50,6 +56,9 @@
       "skill3";
     grid-template-columns: 1fr;
   }
+  .projects {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
 //smartphones
 @include mediaSm {
@@ -65,19 +74,25 @@
     }
   }
 
-  main#about {
+  main#about,
+  main#work {
     & h1,
     h2,
     h3 {
       &.lg-heading {
         font-size: 4rem;
+        margin-top: 1rem;
       }
       &.sm-heading {
         font-size: 1.2rem;
+        margin-top: 1rem;
       }
     }
     .bio-image {
       width: 150px;
     }
+  }
+  .projects {
+    grid-template-columns: repeat(1, 1fr);
   }
 }
