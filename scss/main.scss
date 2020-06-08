@@ -203,4 +203,8 @@ main {
   text-decoration: underline;
 }
 
+.only-small {
+  display: none;
+}
+
 @import 'mobile';
