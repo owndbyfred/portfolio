@@ -1,5 +1,5 @@
-@import "config";
-@import "menu";
+@import 'config';
+@import 'menu';
 
 * {
   box-sizing: border-box;
@@ -11,7 +11,7 @@ body {
   color: set-text-color($primary-color);
   height: 100%;
   margin: 0;
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   line-height: 1.5;
 }
 
@@ -38,6 +38,10 @@ h3 {
 a {
   color: set-text-color($primary-color);
   text-decoration: none;
+}
+
+.bio a {
+  color: ($secondary-color);
 }
 
 header {
@@ -81,8 +85,8 @@ main {
   display: grid;
   grid-gap: 30px;
   grid-template-areas:
-    "bioimage bio bio"
-    "skill1 skill2 skill3";
+    'bioimage bio bio'
+    'skill1 skill2 skill3';
   grid-template-columns: repeat(3, 1fr);
 
   .bio-image {
@@ -195,4 +199,8 @@ main {
   height: 60px;
 }
 
-@import "mobile";
+.link-hover:hover {
+  text-decoration: underline;
+}
+
+@import 'mobile';
